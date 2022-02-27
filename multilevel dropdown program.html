@@ -1,0 +1,88 @@
+<html>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: red;
+        }
+        Ul li{
+            display:block;
+            position:relative;
+            float:left;
+            background: blue;
+        }
+        li ul{ display: none;}
+        ul li a{
+            display:block;
+            padding: 1em;
+            text-decoration: none;
+            white-space: nowrap;
+            color:rgb(255, 44, 185);
+        }
+        ul li a:hover{
+            background:yellow;
+        }
+        li:hover>ul{
+            display:block;
+            position:absolute;
+        }
+        li:hover li{float:none;}
+        li:hover a{background:orange}
+        li:hover li a:hover{back-ground:magenta}
+        .main-navigation li ul li{
+            border-top:0;
+        }    
+        ul ul ul{
+            left:100%;
+            top:0;
+        }
+        ul:before,
+        ul:after{
+            content:"";/*1*/
+            display:table;/*2*/
+        }
+        ul:after{clear :both;}
+        </style><ul class="main-navigation">
+    <li><a href="#">Home</a>
+    </li>
+    <li><a href="#"> Front End DEsign</a>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Front End Design</a>
+            <ul><li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="#">Resets</a></li>
+                    <li><a href="#">Grids</a></li>
+                    <li><a href="#"></a></li>
+                </ul></li>
+                <li><a href="#">Frameworks</a></li>
+        </ul></li><li><a href="#">javascript</a></li>
+        <ul>
+            <li><a href="#">Web application Developement</a></li>
+                <li><a href="#">Web page developement</a></li>
+                </ul>
+
+</ul>
+    <ul>
+            <li><a href="#">Ajax</a></li>
+            <li><a href="#">jquery</a></li>
+    </ul>
+    </li>
+    </ul>
+    <li><a href="#">wordpress Developement</a></li>
+    <ul>
+        <li><a href="#">themes</a></li>
+        <li><a href="#">plugins</a></li>
+        <li><a href="#">custom Post Types</a>
+            <ul>
+                <li><a href="#">Portfolios</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">options</a></li>
+            </ul></li>
+            <li><a href="#">About us</a></li>
+    </ul>
+</html>
